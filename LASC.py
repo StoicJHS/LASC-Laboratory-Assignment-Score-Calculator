@@ -88,7 +88,7 @@ if uploaded_file is not None:
 
     df = df.drop(df.columns[[2, 3]], axis=1)
 
-    # 열 인덱스를 원하는 형태로 설정
+    # 열 인덱스를 원하는 형태로 설정함
     new_columns = {0: '推奨', 1: '科目コード', 4: '授業科目名', 5: '授業担当教員', 6: '単位', 7: '成績', 8: 'Q', 9: '修得時期'}  # 여기서는 원하는 인덱스를 직접 지정
 
     df = df.rename(columns=new_columns)
