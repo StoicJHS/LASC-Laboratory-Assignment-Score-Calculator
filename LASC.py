@@ -119,3 +119,6 @@ if uploaded_file is not None:
     st.write(df_target)
     st.markdown('<h3 style="text-align: left; width: 700px;">計算結果（研究室配属スコア）</h3>', unsafe_allow_html=True)
     st.write('### スコア : ',total_lab_score)
+    
+    
+    st.markdown('Made by StoicJHS')
