@@ -26,13 +26,13 @@ st.markdown('1. 東工大ポータルでログインし、「教務Webシステ�
 
 
 # 이미지를 표시합니다.
-st.image("https://raw.githubusercontent.com/StoicJHS/LASC-Laboratory-Assignment-Score-Calculator/master/1.PNG", caption='「成績閲覧」の状態の画面', width=500)
+st.image("https://raw.githubusercontent.com/StoicJHS/Test/main/1.PNG", caption='「成績閲覧」の状態の画面', width=500)
 
 
 st.markdown('2. その状態で、「ctrl + s」を入力し、htmlファイルをダウンロードしてください。')
 st.markdown('（ブラウザーのページダウンロード機能を用いても大丈夫です。）')
 
-st.image("https://raw.githubusercontent.com/StoicJHS/LASC-Laboratory-Assignment-Score-Calculator/master/2.PNG", caption='「成績閲覧」の状態の画面', width=500)
+st.image("https://raw.githubusercontent.com/StoicJHS/Test/main/2.PNG", caption='「成績閲覧」の状態の画面', width=500)
 
 
 
