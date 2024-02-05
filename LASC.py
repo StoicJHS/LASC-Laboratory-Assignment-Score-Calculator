@@ -7,6 +7,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 import lxml.etree as xml
 import lxml
+from PIL import Image
 
 st.markdown('<h1 style="text-align: center;">研究室配属スコア計算機</h1>', unsafe_allow_html=True)
 st.markdown('<h3 style="text-align: center; width: 700px;">（LASC : Laboratory Assignment Score Calculator）</h3>', unsafe_allow_html=True)
@@ -21,13 +22,17 @@ st.markdown('')
 st.markdown('<h3 style="text-align: left; width: 700px;">・使い方</h3>', unsafe_allow_html=True)
 st.markdown('1. 東工大ポータルでログインし、「教務Webシステム」の「成績閲覧」に入ってください。')
 
-
-st.image("1.png", caption='「成績閲覧」の状態の画面',width=500)
+# 이미지를 로드합니다.
+image1 = Image.open("1.png")
+# 이미지를 표시합니다.
+st.image(image1, caption='「成績閲覧」の状態の画面', width=500)
 
 st.markdown('2. その状態で、「ctrl + s」を入力し、htmlファイルをダウンロードしてください。')
 st.markdown('（ブラウザーのページダウンロード機能を用いても大丈夫です。）')
 
-st.image("2.png", caption='htmlファイルをダウンロードする',width=500)
+# 이미지를 로드합니다.
+image2 = Image.open("2.png")
+st.image(image2, caption='htmlファイルをダウンロードする',width=500)
 
 
 st.markdown('3. 「Browse files」をクリックして、先程のhtmlファイルをアップロードしてください。')
@@ -41,7 +46,7 @@ uploaded_file = st.file_uploader("htmlファイルをアップロード", type=[
 if uploaded_file is not None:
     # 업로드한 파일을 데이터프레임으로 읽어들임
     content = uploaded_file.read()
-    soup = BeautifulSoup(content, "lxml")
+    soup = bs(content, "lxml")
 
     t1 = []
     get = []
