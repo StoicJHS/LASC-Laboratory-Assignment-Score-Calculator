@@ -41,7 +41,7 @@ st.markdown('3. 「Browse files」をクリックして、先程のhtmlファイ
 
 st.markdown('')
 st.markdown('****アップロードが完了すると、直ちに計算結果が表示されます。**')
-st.markdown('****アップロードされたファイルはローカルであるので、プライバシーが保護されています。**')
+st.markdown('****アップロードされたファイルはローカルディレクトリにあるので、プライバシーが保護されています。**')
 
 
 # adding file uploading function
