@@ -15,7 +15,7 @@ st.markdown('<h3 style="text-align: center; width: 700px;">（LASC : Laboratory 
 st.markdown('<h4 style="text-align: center;">(v1.0.0-release1)</h4>', unsafe_allow_html=True)
 st.markdown('')
 
-st.markdown('成績公開ごとにアプリが機能しなくなる可能性があり、アップデートで対処します。')
+st.markdown('*成績公開ごとにアプリが機能しなくなる可能性があり、アップデートで対処します。')
 
 st.markdown('')
 
