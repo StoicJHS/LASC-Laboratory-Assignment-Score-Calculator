@@ -12,7 +12,7 @@ import lxml
 
 st.markdown('<h1 style="text-align: center;">研究室配属スコア計算機 </h1>', unsafe_allow_html=True)
 st.markdown('<h3 style="text-align: center; width: 700px;">（LASC : Laboratory Assignment Score Calculator）</h3>', unsafe_allow_html=True)
-st.markdown('<h4 style="text-align: center;">(v1.0.0-release1)</h4>', unsafe_allow_html=True)
+st.markdown('<h4 style="text-align: center;">(v1.0.0-release1, Made by StoicJHS')</h4>', unsafe_allow_html=True)
 st.markdown('')
 
 st.markdown('*成績公開ごとにアプリが機能しなくなる可能性があり、アップデートで対処します。')
@@ -121,4 +121,4 @@ if uploaded_file is not None:
     st.write('### スコア : ',total_lab_score)
     
     
-    st.markdown('Made by StoicJHS')
+ 
