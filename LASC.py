@@ -2,7 +2,6 @@ import streamlit as st
 import os
 from collections import OrderedDict
 import pandas as pd
-from tabulate import tabulate
 import datetime
 import requests
 from bs4 import BeautifulSoup as bs
