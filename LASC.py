@@ -10,8 +10,11 @@ import lxml.etree as xml
 import lxml
 
 
-st.markdown('<h1 style="text-align: center;">研究室配属スコア計算機</h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="text-align: center;">研究室配属スコア計算機 (v1.0.0-release1)</h1>', unsafe_allow_html=True)
 st.markdown('<h3 style="text-align: center; width: 700px;">（LASC : Laboratory Assignment Score Calculator）</h3>', unsafe_allow_html=True)
+st.markdown('')
+
+st.markdown('成績公開ごとにアプリが機能しなくなる可能性があり、アップデートで対処します。')
 
 st.markdown('')
 
@@ -24,8 +27,6 @@ st.markdown('<h3 style="text-align: left; width: 700px;">・使い方</h3>', uns
 st.markdown('1. 東工大ポータルでログインし、「教務Webシステム」の「成績閲覧」に入ってください。')
 
 
-
-# 이미지를 표시합니다.
 st.image("https://raw.githubusercontent.com/StoicJHS/Test/main/1.PNG", caption='「成績閲覧」の状態の画面', width=500)
 
 
@@ -35,18 +36,18 @@ st.markdown('（ブラウザーのページダウンロード機能を用いて�
 st.image("https://raw.githubusercontent.com/StoicJHS/Test/main/2.PNG", caption='「成績閲覧」の状態の画面', width=500)
 
 
-
-
 st.markdown('3. 「Browse files」をクリックして、先程のhtmlファイルをアップロードしてください。')
 
 st.markdown('')
 st.markdown('****アップロードが完了すると、直ちに計算結果が表示されます。**')
 
-# 파일 업로드 기능 추가
+
+
+# adding file uploading function
 uploaded_file = st.file_uploader("htmlファイルをアップロード", type=["html"])
 
 if uploaded_file is not None:
-    # 업로드한 파일을 데이터프레임으로 읽어들임
+    # read the uploaded file as a dataframe
     content = uploaded_file.read()
     soup = bs(content, "lxml")
 
@@ -73,12 +74,9 @@ if uploaded_file is not None:
     score = []
     gp = []
 
-    # 빈 리스트 생성
     cleaned_t1 = []
 
-    # 각 문자열에 대해 반복
     for string in t1:
-        # 개행 문자 제거 후 문자열 분리
         cleaned_string = string.replace('\n', '')
         cleaned_string_split = cleaned_string.split('                    ')
         cleaned_t1.extend(cleaned_string_split)
@@ -88,7 +86,7 @@ if uploaded_file is not None:
 
     df = df.drop(df.columns[[2, 3]], axis=1)
 
-    # 열 인덱스를 원하는 형태로 설정함
+
     new_columns = {0: '推奨', 1: '科目コード', 4: '授業科目名', 5: '授業担当教員', 6: '単位', 7: '成績', 8: 'Q', 9: '修得時期'}  # 여기서는 원하는 인덱스를 직접 지정
 
     df = df.rename(columns=new_columns)
