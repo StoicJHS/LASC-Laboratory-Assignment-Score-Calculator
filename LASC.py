@@ -1,11 +1,13 @@
 import streamlit as st
 import os
-from bs4 import BeautifulSoup
 from collections import OrderedDict
 import pandas as pd
 from tabulate import tabulate
 import datetime
 import requests
+from bs4 import BeautifulSoup as bs
+import lxml.etree as xml
+import lxml
 
 st.markdown('<h1 style="text-align: center;">研究室配属スコア計算機</h1>', unsafe_allow_html=True)
 st.markdown('<h3 style="text-align: center; width: 700px;">（LASC : Laboratory Assignment Score Calculator）</h3>', unsafe_allow_html=True)
