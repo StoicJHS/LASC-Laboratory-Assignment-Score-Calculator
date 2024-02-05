@@ -1,6 +1,7 @@
 import streamlit as st
 import os
 from collections import OrderedDict
+import numpy as np
 import pandas as pd
 import datetime
 import requests
@@ -25,13 +26,14 @@ st.markdown('1. 東工大ポータルでログインし、「教務Webシステ�
 
 
 # 이미지를 표시합니다.
-st.image("https://github.com/StoicJHS/LASC-Laboratory-Assignment-Score-Calculator/blob/master/1.PNG", caption='「成績閲覧」の状態の画面', width=500)
+st.image("https://raw.githubusercontent.com/StoicJHS/LASC-Laboratory-Assignment-Score-Calculator/master/1.PNG", caption='「成績閲覧」の状態の画面', width=500)
+
 
 st.markdown('2. その状態で、「ctrl + s」を入力し、htmlファイルをダウンロードしてください。')
 st.markdown('（ブラウザーのページダウンロード機能を用いても大丈夫です。）')
 
-# 이미지를 표시합니다.
-st.image("https://github.com/StoicJHS/LASC-Laboratory-Assignment-Score-Calculator/blob/master/2.PNG", caption='htmlファイルをダウンロードする', width=500)
+st.image("https://raw.githubusercontent.com/StoicJHS/LASC-Laboratory-Assignment-Score-Calculator/master/2.PNG", caption='「成績閲覧」の状態の画面', width=500)
+
 
 
 
