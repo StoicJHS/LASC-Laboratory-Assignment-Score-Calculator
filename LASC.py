@@ -10,7 +10,8 @@ import lxml.etree as xml
 import lxml
 
 
-st.markdown('<h1 style="text-align: center;">研究室配属スコア計算機 (v1.0.0-release1)</h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="text-align: center;">研究室配属スコア計算機 </h1>', unsafe_allow_html=True)
+st.markdown('<h1 style="text-align: center;">(v1.0.0-release1)</h1>', unsafe_allow_html=True)
 st.markdown('<h3 style="text-align: center; width: 700px;">（LASC : Laboratory Assignment Score Calculator）</h3>', unsafe_allow_html=True)
 st.markdown('')
 
