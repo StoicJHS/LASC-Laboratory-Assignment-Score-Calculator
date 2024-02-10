@@ -33,4 +33,8 @@
  ****アップロードされたファイルはローカルディレクトリにあるので、プライバシーが保護されています。  (Uploaded files are located in a local directory, so privacy is protected.)**
 
 
-## https://lasc-laboratory-assignment-score-calculator-phys-tokyotech2024.streamlit.app/
+
+2024/02/10(Sat) : v2.0.0-release1が公開されました：
+* 計算機の他に、リーダーボード機能を追加しました。
+  
+## [https://tokyotech2024-phys-lasc.streamlit.app/]
