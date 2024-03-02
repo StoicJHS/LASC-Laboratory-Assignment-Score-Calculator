@@ -36,5 +36,11 @@
 
 2024/02/10(Sat) : v2.0.0-release1が公開されました：
 * 計算機の他に、リーダーボード機能を追加しました。
-  
-## [https://tokyotech2024-phys-lasc.streamlit.app/]
+
+2024/03/01(Fri) : v2.1.1-release1が公開されました：
+* リーダーボードの代わりに、研究室配属スコア計算機 & 希望状況確認サービス登録フォーム（LASC & PSCC : Laboratory Assignment Score Calculator & PSCC）を導入しました。
+
+## 計算機＆登録フォーム ： [https://tokyotech2024-phys-lasc.streamlit.app/]
+## 現況確認ページ（登録者のみ） ： [https://tokyotech2024-phys-leaderboard.streamlit.app/] 
+
+
